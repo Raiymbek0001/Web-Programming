@@ -12,7 +12,10 @@ const handleTurnCell = e => {
 		isXNext = !isXNext;
 	}
 	else{
-		e.target.innerText = 'O';
+		for(const integer of cellIndexes){
+			if(integer.innerText == '')
+				integer.innerText = 'O';
+		}
 		isXNext = !isXNext;
 	}
 }
