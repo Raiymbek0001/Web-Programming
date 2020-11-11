@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>HomeWork-6</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="script.js" defer></script>
+</head>
+<body>
+	<div class="container">
+		<div class="select-box">
+			<div class="options-container">
+				<div class="option">
+					<input type="radio" name="category" id="calculator" class="radio">
+					<label for="calculator">Calculator</label>
+				</div>
+				<div class="option">
+					<input type="radio" name="category" id="temperature" class="radio">
+					<label for="temperature">Temperature</label>
+				</div>
+				<div class="option">
+					<input type="radio" name="category" id="volume" class="radio">
+					<label for="volume">Volume</label>
+				</div>
+				<div class="option">
+					<input type="radio" name="category" id="reverse" class="radio">
+					<label for="reverse">Reverse a number</label>
+				</div>
+				<div class="option">
+					<input type="radio" name="category" id="rectangle" class="radio">
+					<label for="rectangle">Draw a rectangle</label>
+				</div>
+				<div class="option">
+					<input type="radio" name="category" id="circle" class="radio">
+					<label for="circle">Draw a circle</label>
+				</div>
+				<div class="option">
+					<input type="radio" name="category" id="circles" class="radio">
+					<label for="circles">Draw circles[diagonal]</label>
+				</div>
+			</div>
+			<div class="selected">
+				Select a category
+			</div>
+		</div>
+	</div>
+	<section class="hide" id="option1">
+		<table>
+			<tr>
+				<td>1st Number:</td>
+				<td>
+					<input type="text" id="num1">
+				</td>
+			</tr>
+			<tr>
+				<td>2nd Number:</td>
+				<td>
+					<input type="text" id="num2">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<a onclick="multiply()" class="button">Multiply</a>
+			</td>
+				<td>
+					<a onclick="divide()" class="button">Divide</a>
+				</td>
+			</tr>
+		</table>
+		<p>The result is:</p>
+		<p id="result1"></p>
+	</section>
+	<section class="hide" id="option2">
+		<table>
+			<tr>
+				<td style="padding-right: 50px;">
+					<div class="temp-block">
+						<h3>Celcius to Farenheit</h3>
+						<input type="text" id="celcius">
+						<p>Formula: (Celcius × 9/5) + 32 </p>
+						<a class="button" onclick="convert('celcius')">Convert</a>
+						<p>The Result is:</p>
+						<p id="result2"></p>
+					</div>
+				</td>
+				<td>
+					<div class="temp-block">
+						<h3>Farenheit to Celcius</h3>
+						<input type="text" id="farenheit">
+						<p>Formula: (Farenheit − 32) × 5/9 </p>
+						<a class="button" onclick="convert('farenheit')">Convert</a>
+						<p>The Result is:</p>
+						<p id="result3"></p>
+					</div>
+				</td>
+			</tr>
+		</table>
+	</section>
+	<section class="hide" id="option3">
+		<p>Input Radius value and get the volume of a sphere</p>
+		<table>
+			<tr>
+				<td>Radius:</td>
+			</tr>
+			<tr>
+				<td><input type="text" id="radius"></td>
+			</tr>
+			<tr>
+				<td>Volume:</td>
+			</tr>
+			<tr>
+				<td>
+					<p id="result4">0</p>
+				</td>
+			</tr>
+			<tr>
+				<td><a class="button" onclick="getVolume()">Calculate</a></p></td>
+			</tr>
+		</table>
+	</section>
+	<section class="hide" id="option4">
+		<p>Input a value and get the reverse of it</p>
+		<input type="text" id="number">
+		<a onclick="reverse()" class="button">Reverse</a>
+		<p>The result is:</p>
+		<p id="result5"></p>
+	</section>
+	<section class="hide" id="option5">
+		<canvas id="canvas" width="400" height="400">
+	    </canvas>
+	</section>
+	<section class="hide" id="option6">
+		<canvas id="circle-canvas" width="400" height="400"></canvas>
+	</section>
+	<section class="hide" id="option7">
+		<canvas id="circles-canvas" width="1000"
+		height="800"></canvas>
+	</section>
+</body>
+</html>
