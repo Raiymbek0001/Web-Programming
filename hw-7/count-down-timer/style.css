@@ -1,0 +1,38 @@
+body{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	color: #42f5ef;
+}
+#container{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 600px;
+	height: 300px;
+	margin: 0 auto;
+	margin-top: 200px;
+	background-color: #ad42f5;
+	border-radius: 3px;
+	transition: 0.8s;
+}
+.count p{
+	margin-left: 10px;
+	font-size: 50px;
+}
+.table td{
+	padding: 0 10px 0 10px;
+}
+.button{
+	padding: 7px 15px;
+	border: 2px solid lightblue;
+	border-radius: 300px; 
+	color: black;
+	cursor: pointer;
+}
+.button:hover{
+	transition: .7s;
+	background-color: #42f5ef;
+	color: white;
+}
