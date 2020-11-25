@@ -1,0 +1,54 @@
+{
+	"questions" : [
+		{
+			"question" : "What does HTML stand for?",
+			"answers" : [
+				"Hyperlinks and Text Markup Language",
+				"Hyper Text Markup Language",
+				"Home Tool Markup Language",
+				"Hyperlinking Text Marking Language"
+			],
+			"answer" : "Hyper Text Markup Language"
+		}, 
+		{
+			"question" : "How can you make a numbered list?",
+			"answers" : [
+				"<ol>",
+				"<ul>",
+				"<dl>",
+				"<list>"
+			],
+			"answer" : "<ol>"
+		},
+		{
+			"question" : "Bug: Part of a program that ___________ work correctly.",
+			"answers" : [
+				"does not",
+				"does",
+				"sometimes",
+				"shows"
+			],
+			"answer" : "does not"
+		}, 
+		{
+			"question" : "Choose the correct HTML tag for the largest heading",
+			"answers" : [
+				"<heading>",
+				"<h6>",
+				"<head>",
+				"<h1>"
+			],
+			"answer" : "<h1>"
+		},
+		{
+			"question" : "What is the correct HTML for inserting an image?",
+			"answers" : [
+				"<a url=<img alt='MyImage'>image.gif</img>",
+				"<img src='image.gif' alt='MyImage'>",
+				"<image src='image.gif' alt='MyImage'>",
+				"<img href='image.gif' alt='MyImage'>"
+			],
+			"answer" : "<img src='image.gif' alt='MyImage'>"
+		} 
+	]
+}

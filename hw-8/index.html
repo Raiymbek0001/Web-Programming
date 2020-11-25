@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script defer src="script.js"></script>
+	<title>QUIZ</title>
+</head>
+<body>
+	<div id="main-block">
+		<div class="input">
+			<h3>QUIZ</h3>
+			<p id="invalid"></p>
+			<input id="fName" type="text" placeholder="Name">
+			<input id="lName" type="text" placeholder="Last Name">
+			<div class="button">
+				<a onclick="valid()">
+					start
+				</a>
+			</div>
+		</div>
+	</div>
+	<div id="quiz-block">
+		<div class="header">
+			<h1>Web development QUIZ</h1>
+		</div>
+		<div class="container" id="qBlock">
+			<h3 id="ques"></h3>
+			<div class="question" id="question0"></div>
+			<div class="question" id="question1"></div>
+			<div class="question" id="question2"></div>
+			<div class="question" id="question3"></div>
+		</div>
+		<div class="row">
+			<div id="prev" class="btn">
+				<a>
+					prev
+				</a>
+			</div>
+			<div id="submit" class="btn">
+				<a>
+					submit
+				</a>
+			</div>
+			<div id="next" class="btn">
+				<a>
+					next
+				</a>
+			</div>
+		</div>
+		<div id="nav"></div>
+	</div>
+	<div id="submission">
+		<p>Your results have been submitted succesfully</p>
+		<div class="btns">
+			<a class="score" id="viewScore">View Score</a>
+			<a id="close">Close</a>
+		</div>
+	</div>
+</body>
+</html>
